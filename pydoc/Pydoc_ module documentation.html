@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0041)http://localhost:54060/documentation.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Pydoc: module documentation</title>
+
+<link rel="stylesheet" type="text/css" href="./Pydoc_ module documentation_files/_pydoc.css"></head><body bgcolor="#f0f0f8">
+            <div style="float:left">
+                Python 3.6.8 [tags/v3.6.8:3c6b436a57, MSC v.1916 64 bit (AMD64)]<br>Windows-10
+            </div>
+            <div style="float:right">
+                <div style="text-align:center">
+                  <a href="http://localhost:54060/index.html">Module Index</a>
+                  : <a href="http://localhost:54060/topics.html">Topics</a>
+                  : <a href="http://localhost:54060/keywords.html">Keywords</a>
+                </div>
+                <div>
+                    <form action="http://localhost:54060/get" style="display:inline;">
+                      <input type="text" name="key" size="15">
+                      <input type="submit" value="Get">
+                    </form>&nbsp;
+                    <form action="http://localhost:54060/search" style="display:inline;">
+                      <input type="text" name="key" size="15">
+                      <input type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+            <div style="clear:both;padding-top:.5em;">
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="heading">
+<tbody><tr bgcolor="#7799ee">
+<td valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>documentation</strong></big></big></font></td><td align="right" valign="bottom"><font color="#ffffff" face="helvetica, arial"><a href="http://localhost:54060/">index</a><br><a href="http://localhost:54060/getfile?key=c%3A%5Cusers%5Caniru%5Cpydoc%5Cdocumentation.py">c:\users\aniru\pydoc\documentation.py</a></font></td></tr></tbody></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ee77aa">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="http://localhost:54060/builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="http://localhost:54060/documentation.html#IR_model">IR_model</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="IR_model">class <strong>IR_model</strong></a>(<a href="http://localhost:54060/builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt>A&nbsp;class&nbsp;to&nbsp;represent&nbsp;IR&nbsp;model.<br>
+&nbsp;<br>
+...<br>
+&nbsp;<br>
+Attributes<br>
+----------<br>
+word_dict&nbsp;:&nbsp;dictionary<br>
+&nbsp;&nbsp;dictionary&nbsp;of&nbsp;all&nbsp;words&nbsp;in&nbsp;corpus.Each&nbsp;unique&nbsp;word&nbsp;is&nbsp;mapped&nbsp;to&nbsp;an&nbsp;index<br>
+word_dict_size&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;size&nbsp;of&nbsp;word_dict<br>
+doc_list_size&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;number&nbsp;of&nbsp;docs&nbsp;in&nbsp;corpus<br>
+score_matrix&nbsp;:&nbsp;2D&nbsp;floating&nbsp;point&nbsp;array<br>
+&nbsp;&nbsp;2D&nbsp;array&nbsp;to&nbsp;store&nbsp;tf.idf&nbsp;values<br>
+&nbsp;<br>
+Methods<br>
+-------<br>
+addDocument(self,document):<br>
+&nbsp;&nbsp;adds&nbsp;document&nbsp;to&nbsp;the&nbsp;matrix&nbsp;and&nbsp;store&nbsp;tf&nbsp;in&nbsp;cells<br>
+<a href="http://localhost:54060/documentation.html#-build_Vector_Space">build_Vector_Space</a>(self,documents):<br>
+&nbsp;&nbsp;computes&nbsp;values&nbsp;for&nbsp;cells&nbsp;in&nbsp;vector&nbsp;space<br>
+<a href="http://localhost:54060/documentation.html#-Search">Search</a>(self,query,documents):<br>
+&nbsp;&nbsp;Finds&nbsp;the&nbsp;tf_idf&nbsp;score&nbsp;of&nbsp;query&nbsp;for&nbsp;all&nbsp;docs&nbsp;in&nbsp;corpus&nbsp;and&nbsp;returns&nbsp;it<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table></p></td></tr></tbody></table></p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#eeaa77">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-Search"><strong>Search</strong></a>(self, query, documents)</dt><dd><tt>Finds&nbsp;the&nbsp;tf_idf&nbsp;score&nbsp;of&nbsp;query&nbsp;for&nbsp;all&nbsp;docs&nbsp;in&nbsp;corpus&nbsp;and&nbsp;returns&nbsp;it<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+query&nbsp;:&nbsp;list<br>
+&nbsp;&nbsp;user&nbsp;query&nbsp;as&nbsp;list&nbsp;of&nbsp;terms<br>
+documents&nbsp;:&nbsp;list<br>
+&nbsp;&nbsp;list&nbsp;of&nbsp;list&nbsp;of&nbsp;tuples&nbsp;whose&nbsp;1st&nbsp;element&nbsp;in&nbsp;tuple&nbsp;is&nbsp;id&nbsp;and&nbsp;2nd&nbsp;is&nbsp;list&nbsp;of&nbsp;strings<br>
+Returns<br>
+-------<br>
+query_score&nbsp;:&nbsp;list<br>
+&nbsp;&nbsp;list&nbsp;containing&nbsp;tf.idf&nbsp;scores</tt></dd></dl>
+ <dl><dt><a name="-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Constructs&nbsp;all&nbsp;the&nbsp;necessary&nbsp;attributes&nbsp;for&nbsp;the&nbsp;IR&nbsp;model&nbsp;<a href="http://localhost:54060/builtins.html#object">object</a>.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-build_Vector_Space"><strong>build_Vector_Space</strong></a>(self, documents)</dt><dd><tt>computes&nbsp;values&nbsp;for&nbsp;cells&nbsp;in&nbsp;vector&nbsp;space<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+documents&nbsp;:&nbsp;list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;of&nbsp;list&nbsp;of&nbsp;tuples&nbsp;whose&nbsp;1st&nbsp;element&nbsp;in&nbsp;tuple&nbsp;is&nbsp;id&nbsp;and&nbsp;2nd&nbsp;is&nbsp;list&nbsp;of&nbsp;strings</tt></dd></dl>
+ <dl><dt><a name="-preprocess_sentence"><strong>preprocess_sentence</strong></a>(sentence)</dt><dd><tt>Method&nbsp;to&nbsp;call&nbsp;above&nbsp;defined&nbsp;preprocessing&nbsp;tasks&nbsp;on&nbsp;a&nbsp;string<br>
+&nbsp;<br>
+Parameters:<br>
+sentence(string)<br>
+&nbsp;<br>
+&nbsp;Returns:<br>
+&nbsp;<a href="http://localhost:54060/documentation.html#-stem_words">stem_words</a>(<a href="http://localhost:54060/documentation.html#-remove_stopwords">remove_stopwords</a>(<a href="http://localhost:54060/documentation.html#-tokenize_sentence">tokenize_sentence</a>(sentence)))(list&nbsp;of&nbsp;strings)</tt></dd></dl>
+ <dl><dt><a name="-remove_stopwords"><strong>remove_stopwords</strong></a>(words)</dt><dd><tt>Remove&nbsp;english&nbsp;stop&nbsp;words&nbsp;from&nbsp;a&nbsp;string<br>
+&nbsp;<br>
+Parameters:<br>
+words(list&nbsp;of&nbsp;string)<br>
+&nbsp;<br>
+Returns:<br>
+filtered_words(list&nbsp;of&nbsp;strings)</tt></dd></dl>
+ <dl><dt><a name="-stem_words"><strong>stem_words</strong></a>(words_list)</dt><dd><tt>Stem&nbsp;words&nbsp;in&nbsp;a&nbsp;string<br>
+&nbsp;<br>
+Parameters:<br>
+words_list(list&nbsp;of&nbsp;string)<br>
+&nbsp;<br>
+Returns:<br>
+stemmed_words(list&nbsp;of&nbsp;strings)</tt></dd></dl>
+ <dl><dt><a name="-tokenize_sentence"><strong>tokenize_sentence</strong></a>(sentence)</dt><dd><tt>Tokenize&nbsp;a&nbsp;string&nbsp;and&nbsp;remove&nbsp;punctuations<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sentence(string)<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tokens_list_without_punct(list&nbsp;of&nbsp;strings)</tt></dd></dl>
+</td></tr></tbody></table></p></div>
+</body></html>
